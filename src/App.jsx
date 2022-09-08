@@ -63,7 +63,7 @@ function App() {
             </ul>
             <div className='divMeio'></div>
             
-            <button id='teste2'><img src="./images/photo.jpg" alt="" />Veterinario Sergel</button>
+            <button id='teste2'><img src="./images/photo.jpg" alt="" /><span>{'Veterinário\nSérgio'}</span></button>
             <div id='divButton2'>
             <button id="buttonAction2" onClick={altera_tamanho}><img src="./images/log-out.svg" alt=""/></button>
             </div>

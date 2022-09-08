@@ -29,15 +29,10 @@
   border: none;
 }
 
-.dashBoard {
-  margin-left: 250px;
-}
-
 
 .list {
   list-style: none;
   padding: 13px;
-  background-color: red;
   /* line-height: 40px; */
 
  
@@ -47,16 +42,17 @@
   align-items: center;
   padding: 10px 0;
   display: flex;
+  /* margin-right: 10px; */
   /* justify-content: center; */
   /* background-color: blue; */
  
   margin-bottom: 5px;
  }
 
- /* .list li:first-of-type{
+  .list li:first-of-type{
   background-color: #8ed7c6;
   border-radius: 10%;
- } */
+ } 
 
 .divMeio {
   height: 228px;
@@ -66,7 +62,7 @@
   margin: 20px;
   padding: 1px;
   border: none;
-  background-color: #18c29c;
+  background-color: #8ed7c6;
   cursor: pointer;
   /* display: none; */
 }
@@ -74,20 +70,30 @@
 #divButton2 {
   display: flex; 
   justify-content: flex-end;
+  background-color: #8ed7c6;
+  
   
 }
 #teste2 {
+  display: flex;
   padding: 1px;
   position: absolute;
-  margin: 20px;
+  margin: 20px 10px;
+
   visibility: hidden;
-  background-color: #18c29c;
+  background-color: #8ed7c6;
   border: none;
   word-break: normal;
+  
 }
 #teste2 img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
   border-radius: 20%;
+  margin-right: 10px;  
   
+}
+
+span {
+  white-space: pre-line;
+
 }
