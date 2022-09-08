@@ -1,0 +1,58 @@
+.aside {
+  width: 70px;
+  height: 100vh;
+  background-color: #18c29c;
+  transition : width 1s;
+  /* display: none; */
+}
+
+#buttonAction {
+  margin: 20px;
+  padding: 1px;
+  border: none;
+  background-color: #18c29c;
+  cursor: pointer;
+}
+
+#divButton {
+  display: flex; 
+  justify-content: flex-end;
+  
+}
+
+#teste {
+  padding: 1px;
+  position: absolute;
+  margin: 20px;
+  visibility: hidden;
+  background-color: #18c29c;
+  border: none;
+
+
+}
+
+.dashBoard {
+  margin-left: 250px;
+}
+
+.list {
+  list-style: none;
+  padding: 20px;
+  /* line-height: 40px; */
+ 
+}
+ .list li {
+  /* background-color: red; */
+  align-items: center;
+  padding: 10px 0;
+  display: flex;
+ 
+  margin-bottom: 5px;
+ }
+
+.list img {
+  margin-right: 20px;
+  
+}
+
+
