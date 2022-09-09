@@ -27,19 +27,19 @@ function App() {
     const menuIcon2 = document.getElementById('teste2')
     const listItem = document.getElementById('listItem')
 
-    if(x.style.width === "180px"){
+    if(x.style.width === "200px"){
         // listItem.style.justifyContent = "flex-start"
         x.style.width = 70 + 'px'
         menuIcon.style.visibility = 'hidden'
         menuIcon2.style.visibility = 'hidden'
     } else {
         // listItem.style.justifyContent = "center"
-        x.style.width = 180 + 'px'
+        x.style.width = 200 + 'px'
 
        setTimeout(() => {
         menuIcon.style.visibility = 'visible'
         menuIcon2.style.visibility = 'visible'
-       },500)
+       },50)
     }
 
 }
@@ -70,9 +70,12 @@ function App() {
             </div>
         
         </div>
-        <div className='div2'></div>
+        <div className='div2'>
+           <div id='toggle'>
+              <i className='indicador'></i>
+            </div>
+        </div>
     </div>
-   
     </div>
   )
 }
