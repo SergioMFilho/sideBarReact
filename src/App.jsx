@@ -46,6 +46,7 @@ function App() {
 
   return (
     <div className="App">
+       
        <div className="container">
         <div id="div" className="aside">
             <button id="teste" ><img src="./images/logo.svg" alt=""/></button>
@@ -67,9 +68,11 @@ function App() {
             <div id='divButton2'>
             <button id="buttonAction2" onClick={altera_tamanho}><img src="./images/log-out.svg" alt=""/></button>
             </div>
+        
         </div>
-     
+        <div className='div2'></div>
     </div>
+   
     </div>
   )
 }
