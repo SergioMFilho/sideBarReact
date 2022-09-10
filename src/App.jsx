@@ -1,10 +1,17 @@
 
 import './App.css';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
+import Switch from '@mui/material/Switch';
 
 function App() {
+  const toggle = document.getElementById('toggle');
   const [showButtonText,setShowButtonText] = useState(false)
   const [isMenuOpen,setIsMenuOpen] = useState(false)
+  const [isToggleOpen, setIsToggleOpen] = useState(false)
+  useEffect(() => {
+    console.log(isToggleOpen)
+  },[isToggleOpen])
+
   const altera_tamanho = () => {
     setIsMenuOpen(!isMenuOpen)
 
@@ -28,21 +35,20 @@ function App() {
     const listItem = document.getElementById('listItem')
 
     if(x.style.width === "200px"){
-        // listItem.style.justifyContent = "flex-start"
         x.style.width = 70 + 'px'
         menuIcon.style.visibility = 'hidden'
         menuIcon2.style.visibility = 'hidden'
     } else {
-        // listItem.style.justifyContent = "center"
         x.style.width = 200 + 'px'
 
        setTimeout(() => {
         menuIcon.style.visibility = 'visible'
         menuIcon2.style.visibility = 'visible'
-       },50)
+       },500)
     }
 
 }
+
 
   return (
     <div className="App">
@@ -55,12 +61,12 @@ function App() {
             </div>
             
             <ul className="list">
-                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/search.svg" alt=""/> {isMenuOpen && "Buscar"}</li>
-                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/grid.svg" alt=""/>{isMenuOpen && "Dashboard"}</li>
-                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/pet.svg" alt=""/> {isMenuOpen && "Pets"}</li>
-                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/user.svg" alt=""/>{isMenuOpen && "Clientes"}</li>
-                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/vet.svg" alt=""/> {isMenuOpen && "Vets"}</li>
-                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/settings.svg" alt=""/> {isMenuOpen && "Ajustes"}</li>
+                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/search.svg" alt=""/> <span>{isMenuOpen && "Buscar"}</span></li>
+                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/grid.svg" alt=""/><span>{isMenuOpen && "Dashboard"}</span></li>
+                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/pet.svg" alt=""/> <span>{isMenuOpen && "Pets"}</span></li>
+                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/user.svg" alt=""/><span>{isMenuOpen && "Clientes"}</span></li>
+                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/vet.svg" alt=""/> <span>{isMenuOpen && "Vets"}</span></li>
+                <li style={{justifyContent: isMenuOpen ? "flex-start" : "center"}}><img src="./images/settings.svg" alt=""/> <span>{isMenuOpen && "Ajustes"}</span></li>
             </ul>
             <div className='divMeio'></div>
             
@@ -70,10 +76,9 @@ function App() {
             </div>
         
         </div>
-        <div className='div2'>
-           <div id='toggle'>
-              <i className='indicador'></i>
-            </div>
+        <div style={{backgroundColor: isToggleOpen ? "#fff": "#2b2b2b"  }} className='div2'>
+           <Switch onChange={(e) => {setIsToggleOpen(e.target.checked)}} size='large'/>
+          
         </div>
     </div>
     </div>
