@@ -52,7 +52,7 @@
  } 
 
 .divMeio {
-  height: 228px;
+  height: 258px;
 }
 
 #buttonAction2 {
@@ -96,13 +96,32 @@ span {
 }
 
 .div2 {
-  width: 100vw;;
-  height: 100vh;
-  /* background-color: #2b2b2b; */
-  display: flex;  
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  
 }
+
+/* TODAS AS DIVS ABAIXO*/
+
+main section:nth-child(1){
+  background-color: yellow;
+  flex: 1.5;
+  display: flex;  
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 6vh;
+}
+main section:nth-child(2){
+  background: red;
+  flex: 1;
+  height: 85vh;
+}
+main section:nth-child(3){
+  background: gray;
+  flex: 1;
+  height: 9vh;
+}
+
 
 .container {
   width: 100vw;
