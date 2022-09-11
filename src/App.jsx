@@ -79,7 +79,12 @@ function App() {
         <div style={{backgroundColor: isToggleOpen ? "#fff": "#2b2b2b"  }} className='div2'>
           <main>
            <section><Switch onChange={(e) => {setIsToggleOpen(e.target.checked)}} size='large'/></section>
-           <section>content2</section>
+           <section>
+            <div id='content'>
+              deded
+            </div>
+           </section>
+
            <section>content3</section>
            </main>
         </div>
