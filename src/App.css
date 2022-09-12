@@ -112,8 +112,12 @@ main section:nth-child(1){
   height: 6vh;
 }
 main section:nth-child(2){
-  background: red;
-  flex: 1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: row;
+  background: #fff;
+  /* flex: 1; */
   height: 85vh;
 }
 main section:nth-child(3){
@@ -129,10 +133,3 @@ main section:nth-child(3){
   display: flex;
   }
 
-#content {
-  margin: 0 auto;
-  display: flex;
-  width: 400px;
-  height: 500px;
-  background-color: antiquewhite;
-}

@@ -1,0 +1,10 @@
+.promo {
+    width: 250px;
+    height: 300px;
+    background-color: #18c29c;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+    content: unset;
+}

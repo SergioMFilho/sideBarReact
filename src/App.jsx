@@ -2,6 +2,7 @@
 import './App.css';
 import {useState,useEffect} from 'react';
 import Switch from '@mui/material/Switch';
+import Promo from './components/Promo';
 
 function App() {
   const toggle = document.getElementById('toggle');
@@ -81,7 +82,9 @@ function App() {
            <section><Switch onChange={(e) => {setIsToggleOpen(e.target.checked)}} size='large'/></section>
            <section>
             <div id='content'>
-              deded
+              <h1>Conheça nossos planos</h1>
+              <Promo/>
+              
             </div>
            </section>
 
