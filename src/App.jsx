@@ -4,6 +4,7 @@ import {useState,useEffect} from 'react';
 import Switch from '@mui/material/Switch';
 import Promo from './components/Promo';
 
+
 function App() {
   const toggle = document.getElementById('toggle');
   const [showButtonText,setShowButtonText] = useState(false)
@@ -77,18 +78,22 @@ function App() {
             </div>
         
         </div>
-        <div style={{backgroundColor: isToggleOpen ? "#fff": "#2b2b2b"  }} className='div2'>
+        <div className='div2'>
           <main>
-           <section><Switch onChange={(e) => {setIsToggleOpen(e.target.checked)}} size='large'/></section>
-           <section>
+           <section style={{backgroundColor: isToggleOpen ? "gray": "#2b2b2b"  }}> <Switch onChange={(e) => {setIsToggleOpen(e.target.checked)}} size='large'/></section>
+           <section id='meio' style={{backgroundColor: isToggleOpen ? "gray": "#2b2b2b"  }}>
+           <h1 >Conheça nossos planos</h1>
+           <p id='pMeio'>Conheça nossos serviços e escolha o plano ideal para o seu pet.</p>
             <div id='content'>
-              <h1>Conheça nossos planos</h1>
-              <Promo/>
+              
+              <Promo planType='Free' benefits={['Tratamento Básico']}/>
+              <Promo planType='Básico' hasCustomHeader benefits={['Tratamento Básico','Banho e tosa']}/> {/* hasCutomHeader é igual hasCustomHeader = true*/}
+              <Promo planType='Profissional' benefits={['Tratamento Básico','Banho e tosa','Passeio especial']}/>
               
             </div>
            </section>
 
-           <section>content3</section>
+           <section  style={{backgroundColor: isToggleOpen ? "gray": "#2b2b2b"  }}></section>
            </main>
         </div>
     </div>

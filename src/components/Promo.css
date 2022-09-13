@@ -1,10 +1,127 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#h1Component {
+    color: black; 
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
 .promo {
     width: 250px;
-    height: 300px;
-    background-color: #18c29c;
+    height: 350px;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    content: unset;
+    /* padding: 20px; */
+    margin-top: 30px;
+    border-radius: 10px;
+    
+}
+
+.promo #description{
+    font-size: 12px;
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+h2 span:nth-of-type(1){
+    color: black;
+    margin-left: 3px;
+    font-size: 13px;
+    padding-top: 10px;
+    
+}
+
+h2 span:nth-of-type(2){
+    color: gray;
+    margin-left: 3px;
+    font-size: 13px;
+    padding-top: 10px;
+    
+}
+
+.bar{
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    margin: 20px;
-    content: unset;
+    align-items: center; 
+        border-top: 0.3px solid #d0d3d9;
+        width: 100%;
+    margin-bottom: 5px;
+    
 }
+
+.promo p {
+    margin-top: 10px;
+    color: #828799;
+}
+
+.checks {
+    height: 140px;
+}
+
+.checks p{
+    display: flex;
+    color: black;
+    font-size: 12px;
+}
+
+.checks p img {
+    margin: 0 10px 0 0;
+}
+
+.divButtonFree {
+   /* height: 100%; */
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 20px;
+   position: relative;
+}
+
+.divButtonFree button {
+    /* margin-top: 90px; */
+    width: 90%;
+}
+
+.customHeader {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#popularButton { 
+    border-radius: 15px;
+    height: 30px;
+    padding: 0 15px;
+    background-color: #1D539E;
+    text-decoration-color: #fff;
+    border-width: 0;
+    
+}
+
+#popularButton span {
+    color: #fff;
+}
+
+.cardBody {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
