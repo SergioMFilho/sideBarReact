@@ -52,7 +52,7 @@
  } 
 
 .divMeio {
-  height: 258px;
+  height: 250px;
 }
 
 #buttonAction2 {
@@ -67,6 +67,7 @@
 #divButton2 {
   display: flex; 
   justify-content: flex-end;
+  align-items: flex-end;
   background-color: #8ed7c6;
   
   
