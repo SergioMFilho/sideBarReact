@@ -11,11 +11,8 @@ export default function Promo(props) {
                 {props.hasCustomHeader && <button id='popularButton'> <span>Popular</span> </button>}
             </div>
             <div className='cardBody'>
-                <h2>R$ {props.preco}<span>,00</span><span>/mês</span> 
-                    {/* 0
-                    <span>,00</span>
-                    <span>/mês</span> */}
-                </h2>
+                <h2>R$ {props.price}<span>,00</span><span>/mês</span> </h2>
+
                     <p id='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     <div className = 'bar'/>
                 <div className='checks'>        

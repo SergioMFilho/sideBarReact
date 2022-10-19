@@ -86,9 +86,9 @@ function App() {
            <p id='pMeio'>Conheça nossos serviços e escolha o plano ideal para o seu pet.</p>
             <div id='content'>
               
-              <Promo planType='Free' benefits={['Tratamento Básico']} preco={0}/>
-              <Promo planType='Básico' hasCustomHeader benefits={['Tratamento Básico','Banho e tosa']} preco={50}/> {/* hasCutomHeader é igual hasCustomHeader = true*/}
-              <Promo planType='Profissional' benefits={['Tratamento Básico','Banho e tosa','Passeio especial']} preco={100}/>
+              <Promo planType='Free' benefits={['Tratamento Básico']} price={0}/>
+              <Promo planType='Básico' hasCustomHeader benefits={['Tratamento Básico','Banho e tosa']} price={50}/> {/* hasCutomHeader é igual hasCustomHeader = true*/}
+              <Promo planType='Profissional' benefits={['Tratamento Básico','Banho e tosa','Passeio especial']} price={100}/>
               
             </div>
            </section>
